@@ -10,6 +10,8 @@ app.set("views",path.join(__dirname,"/views"));
 
 const port = 3000
 
+app.use(express.static(path.join(__dirname,"/public/css")));
+app.use(express.static(path.join(__dirname,"/public/js")));
 //set view(template) engine to ejs
 app.set("view engine","ejs");
 
